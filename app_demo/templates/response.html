@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+   <html lang="br-pt">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Image Response</title>
+      <style>
+        #container {
+          width: 90%;
+          margin: auto;
+        }
+       .alignleft {
+          margin: auto;
+          width: 70%;
+	        padding: 0px;
+          text-align: left;
+        }
+       .displ{
+    	  max-height:200px;
+          width:auto;
+          max-width:200px;
+       }
+      </style>
+   </head>
+
+   <body style="margin: 50px;">
+    <div class="container">
+       <p class="ex1"; style="font-size:12pt;">
+       <h1>{{ username }}, por favor avalie a emoção</h1> </p>
+       <h3>imagem selecionada: {{ image }}</h3>
+        <p class="alignleft">
+	        <img class="displ" src="{{ url_for('static', filename='images/' + directory_name + '/' + image) }}" alt="{{ image }}" >
+       </p>      
+      <br><br>
+       <p class="alignleft">
+       <form method="post">
+           {% for emotion in emotions %}
+               <input type="radio" id="{{ emotion }}" name="emotion" value="{{ emotion }}" required>
+               <label style="font-size:12pt;" for="{{ emotion }}">{{ emotion }}</label>
+           {% endfor %}
+        <br><br><br>
+           <label style="font-size:12pt; font-family:verdana" for="additional_info">Informação Adicional:</label>
+           <textarea style="height:50px; font-size:12pt;" id="additional_info" name="additional_info"></textarea>
+           &nbsp;&nbsp;&nbsp;&nbsp;
+           <button type="submit" style="font-size:12pt;">Enviar</button>
+       </form>
+       </p>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Image Selection</title>
+
+    <style>
+      #container {
+        width: 90%;
+        margin: auto;
+        font-size: 1.0em;      
+        }
+      
+      #ht ol{
+         line-height: 2.5em;
+	      }
+   </style>
+</head>
+
+<body>
+     <div id='container'>
+      <form action="{{ url_for('imagelinks') }}" method="post">
+        <input type="hidden" name="username" value="{{ username }}">
+        <input type="hidden" name="directory_name" value="{{ directory_name }}">
+	<h2> Olá {{username}}, Clique na imagem para avaliar.</h2>
+	<h3>&nbsp; &nbsp;&nbsp; Porfavor anote o número da imagem.</h3>
+	<div id='ht'>
+	<ol>
+          {% for image in imagelist %}
+              <li>
+                <input type="radio" name="image" value="{{ image }}" required>{{ image }} <br>
+              </li>
+          {% endfor %}
+	</ol>  
+	</div>
+	<br> &nbsp;&nbsp;&nbsp;&nbsp;
+        <button style="font-size:12pt;" type="submit">Selecionar Imagem</button>
+    </form>
+ </div>
+</body>
+</html>

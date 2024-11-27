@@ -1,0 +1,35 @@
+<!-- dirlinks.html -->
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Escolha Pasta</title>
+</head>
+
+<style>
+.element {
+  font-size: larger;
+}
+#container {
+  width: 90%;
+  margin: auto;}
+</style>
+
+<body>
+  <div id='container'; class="element">
+    <h1>Olá, {{ username }}!</h1>
+    <h3>Selecione uma pasta:</h3>
+      <form method="post">
+        <select style="height:30px;font-size:12pt;" name="directory_name">
+            {% for directory in directories %}
+                <option style="height:20px;font-size:12pt;" value="{{ directory }}">{{ directory }}</option>
+            {% endfor %}
+        </select>
+        &nbsp;&nbsp;&nbsp;
+        <button style="font-size:12pt;" type="submit">Selecione</button>
+    </form>
+  </div>
+
+</body>
+</html>

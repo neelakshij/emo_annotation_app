@@ -1,0 +1,54 @@
+<!-- choice.html -->
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emoção App</title>
+    <style>
+        table, th, td {border: 1px solid green;}
+    </style>
+</head>
+
+<style>
+#butn {
+  padding: 10px;
+  margin: auto;
+  width: 80%;
+}
+#container {
+  width: 90%;
+  margin: auto;
+  font-size: 1.2em;
+}
+</style>
+
+<body>
+    <div id='container'>
+    <h1>Agradecemos sua resposta!</h1>
+    <p><strong>Nome de usuário:</strong> {{ username }}</p>
+    <p><strong>Pasta selecionada:</strong> {{ directory_name }}</p>
+    <p><strong>Imagem selecionada:</strong> {{ image }}</p>
+    <p><strong>Emoção:</strong> {{ emotion }}</p>
+    <p><strong>Informações adicionais inseridas:</strong> {{ additional_info }}</p>
+    <br>
+    <p><strong>{{ username }}</strong>, você avaliou  &nbsp; <strong>{{ directory_name }}/{{ image }}</strong>  &nbsp; como  <strong>"{{ emotion }}"</strong> e &nbsp; adicionou texto <strong>"{{ additional_info }}"</strong></p>
+
+    <br>
+    <h2>você deseja continuar?</h2>
+    <form action="{{ url_for('choice') }}" method="post">
+
+         <!-- Hidden fields to retain necessary data -->
+        <input type="hidden" name="username" value="{{ username }}">
+      
+       <div id='butn'>
+        <button style="width:10%;height:35px;font-size:16pt;" type="submit" name="continue" value="Sim">Sim</button>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+        <button style="width:10%;height:35px;font-size:16pt;" type="submit" name="continue" value="Não">Não</button>
+      </div>
+
+    </form>
+  </div>
+</body>
+
+</html>
