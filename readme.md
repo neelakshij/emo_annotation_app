@@ -11,7 +11,7 @@ This work is a custom application developed for the ROSANA project, Centro de Te
 - Keep html code in templates directory
 - User responses are recorded as a csv file in data directory.
  
-<img alt="directory structure." src="./figures/tree.png">
+<img alt="directory structure." src="./figures/structure.png">
  
 
 ## How to use:
