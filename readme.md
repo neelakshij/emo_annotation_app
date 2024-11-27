@@ -20,10 +20,10 @@ Download the folder app_demo. From app_demo directory path run on the terminal:
 
 The terminal will show the address where the app is running. Paste it on the browser to access the application.
 
-The workflow of the application is as per shown in the figure:
+### The workflow of the application:
 <img alt="workflow" src="./figures/outline.png">
 
-Woking of the application:
+### Woking of the application:
 <img alt="workflow" src="./figures/workflow.gif">
 
 How to cite:
