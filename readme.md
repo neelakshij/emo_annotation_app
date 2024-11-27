@@ -6,13 +6,13 @@ This work is a custom application developed for the ROSANA project, Centro de Te
 
 
 ## Directory structure:
-<p> Programming logic is in app.py
-Keep images in static/images/ directory
-Find html code in templates directory
-User responses are recorded as a csv file in data directory.
+- Programming logic is in app.py. Keep it in app_demo package.
+- Keep your images in static/images/ directory. 
+- Keep html code in templates directory
+- User responses are recorded as a csv file in data directory.
  
 <img alt="directory structure." src="./figures/tree.png">
- </p>
+ 
 
 ## How to use:
 Download the folder app_demo. From app_demo directory path run on the terminal:
@@ -20,6 +20,10 @@ Download the folder app_demo. From app_demo directory path run on the terminal:
 
 The terminal will show the address where the app is running. Paste it on the browser to access the application.
 
+The workflow of the application is as per shown in the figure:
+<img alt="workflow" src="./figures/outline.png">
+
+Woking of the application:
 <img alt="workflow" src="./figures/workflow.gif">
 
 How to cite:
