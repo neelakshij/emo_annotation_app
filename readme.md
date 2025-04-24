@@ -27,5 +27,4 @@ The terminal will show the address where the app is running. Paste it on the bro
 <img alt="workflow" src="./figures/workflow.gif">
 
 How to cite:
-> Neelakshi Joshi, Web Application to Annotate and Validate Emotions, Seminário em Tecnologia da Informação do Programa de Capacitação Institucional (PCI) do CTI Renato Archer, XIV Seminário PCI - 2024, ISSN 2764-636X.
-https://www.gov.br/cti/pt-br/publicacoes/producao-cientifica/seminario-pci/xiv_seminario_pci-2024.
+> Neelakshi Joshi, Web Application to Annotate and Validate Emotions, Seminário em Tecnologia da Informação do Programa de Capacitação Institucional (PCI) do CTI Renato Archer, XIV Seminário PCI - 2024, ISSN 2764-636X. https://even3.blob.core.windows.net/formulario-inscricao/CTI_PCI2024_artigo_njoshi.455f69ad512b467d9899.pdf
